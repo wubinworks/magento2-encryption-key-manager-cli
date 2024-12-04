@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Wubinworks. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Framework\Console\CommandListInterface">
+        <arguments>
+            <argument name="commands" xsi:type="array">
+                <item name="wubinworks_encryptionkeymanagercli_console_command_generatekeycommand" xsi:type="object">Wubinworks\EncryptionKeyManagerCli\Console\Command\GenerateKeyCommand</item>
+                <item name="wubinworks_encryptionkeymanagercli_console_command_listkeycommand" xsi:type="object">Wubinworks\EncryptionKeyManagerCli\Console\Command\ListKeyCommand</item>
+                <item name="wubinworks_encryptionkeymanagercli_console_command_rotatekeycommand" xsi:type="object">Wubinworks\EncryptionKeyManagerCli\Console\Command\RotateKeyCommand</item>
+            </argument>
+        </arguments>
+    </type>
+</config>

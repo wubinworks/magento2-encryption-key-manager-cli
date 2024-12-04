@@ -1,0 +1,46 @@
+{
+    "name": "wubinworks/module-encryption-key-manager-cli",
+    "description": "A utility for Magento 2 encryption key rotation and management. CVE-2024-34102(aka Cosmic Sting) victims can use it as an aftercare.",
+    "keywords": [
+        "cve-2024-34102",
+        "cosmic sting",
+        "encryption key",
+        "key rotation",
+        "key generation",
+        "magento 2",
+        "cli",
+        "deployment automation"
+    ],
+    "homepage": "https://www.wubinworks.com",
+    "support": {
+        "issues": "https://github.com/wubinworks/magento2-encryption-key-manager-cli/issues",
+        "chat": "https://www.wubinworks.com/contact"
+    },
+    "require": {
+        "php": ">=7.3",
+        "magento/magento2-base": "~2.4.0"
+    },
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": "OSL-3.0",
+    "authors": [
+        {
+            "name": "Wubinworks Dev Team",
+            "email": "extension@wubinworks.com",
+            "homepage": "https://www.wubinworks.com/encryption-key-manager-cli.html",
+            "role": "Developer"
+        }
+    ],
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Wubinworks\\EncryptionKeyManagerCli\\": ""
+        }
+    }
+}
